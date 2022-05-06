@@ -1,2 +1,2 @@
-# Bingo-Live-Bot
-A Discord Bot / Terminal App for Giveaways and various draws
+<h1> Bingo-Live Bot </h1>
+<p>Bingo-Live Discord Bot for </p>
