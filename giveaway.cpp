@@ -8,6 +8,7 @@ How to use:
 2) open a terminal in same folder with code
 3) Run this commands:
 	3.1) $ g++ -fsanitize=address -fsanitize=undefined -fstack-protector -Wall -Wshadow -std=c++17 main.cpp
+		3.1.1) Or just use '$ g++ giveaway.cpp'
 	3.2) $ ./a.out
 
 Tested on Ubuntu 22.04 with gcc "11.2.0"
