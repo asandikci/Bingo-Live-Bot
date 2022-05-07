@@ -16,7 +16,7 @@ Tested on Ubuntu 22.04 with gcc "11.2.0"
 #include"bits/stdc++.h"
 using namespace std;  
 
-#define VERSION "v0.3.6"
+#define VERSION "v0.3.7"
 //Version
 
 #define int long long
@@ -297,7 +297,7 @@ signed main() {
 
 
 	// Congratulations Message 2:
-	for(int g=0;g<CONG_LENG;g++){
+	for(int g=0;g<CONG_LENG/2;g++){
 		string message2 = winnerStrUpper;
 		string spaces = " ";
 		for(int i=0;i<120;i++){
@@ -320,15 +320,16 @@ signed main() {
 	cout << flush << "/*Session End Log:\n";
 	cout << flush << " * There were '"<< participantNum <<"' people in total\n";
 	cout << flush << " * There were '"<< totalDraw <<"' invites in total \n";
-	cout << flush << setprecision(2) << " * Average number of invites was '" << (double)totalDraw/participantNum <<"'\n";
+	// cout << flush << setprecision(2) << " * Average number of invites was '" << (totalDraw/((float)participantNum)) <<"'\n";
+	printf(" * Average number of invites was '~%.2f' \n",(totalDraw/((float)participantNum)));
 	cout << flush << " * Maximum number of invites was '"<< maxDraw <<"'\n";
 	cout << flush << " * Minimum number of invites was '"<< minDraw <<"'\n";
 	cout << flush << " * * * * * * * * * * * * * * * * * * * * * * * * * * \n";
 	cout << flush << " * Winner of this Giveaway is '" << winnerStrUpper <<"'\n";
 	cout << flush << " * " << winnerStrUpper << " had '" << participantMap[winnerStr] << "' total invites\n";
-	cout << flush <<  setprecision(2) << " * " << winnerStrUpper << " had a '"<< ((participantMap[dataVec[winner]])/(double)totalDraw) <<"' percent chance of winning \n";
+	cout << flush <<  setprecision(3) << " * " << winnerStrUpper << " had a '~"<< ((participantMap[dataVec[winner]])/(double)totalDraw) <<"' percent chance of winning \n";
 	cout << flush << " */\n\n\n\n";
-	cout << flush << "Bingo-Live Bot just Ended\n";
+	cout << flush << "Bing"<<symbol(3)<<" - Live Bot just Ended\n";
 	cout << flush << "- - - - - - - - - - - - - -\n";
 
 	// DEBUG 
